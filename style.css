@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(253, 255, 253);
+   
+}
+div{
+    width:fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+#lg{
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    width:max-content;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height: 150px;
+    /* width: 300px !important; */
+}
+h5{
+    text-align: center;
+}
+#head{
+    background-color: black;
+    color: white;
+    display: flex !important;
+}
