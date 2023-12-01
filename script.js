@@ -1,6 +1,9 @@
 const div = document.createElement("div");
-div.setAttribute("class", "container");
 const div1 = document.createElement("div");
+const cardHeader = document.createElement("div");
+
+
+div.setAttribute("class", "container");
 div1.setAttribute("class", "row");
 fetch("https://restcountries.com/v3.1/all").then((data) => data.json()).then((ele) => {
     for (i = 0; i < ele.length; i++) {
@@ -15,11 +18,13 @@ fetch("https://restcountries.com/v3.1/all").then((data) => data.json()).then((el
         <h5 class="card-title">Region : ${ele[i].region}</h5>
         <h5 class="card-title">Lat : ${ele[i].latlng[0]}</h5>
         <h5 class="card-title">Lng : ${ele[i].latlng[1]}</h5>
-        <h5 class="card-title">Country Code : ${ele[i].car.signs[0]}</h5>
+        <h5 class="card-title">Country Code : ${ele[i].cca3}</h5>
         </div>
-        <button type="button" class="btn btn-primary"">Click for Weather</button>`
+        <button type="button" class="btn btn-primary" onclick="weather(${ele[i].name.common})">Click for Weather</button>`
         div1.append(res);
     }
 })
+
+
 div.append(div1);
 document.body.append(div);

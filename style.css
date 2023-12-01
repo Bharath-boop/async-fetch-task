@@ -12,7 +12,9 @@ img {
     background-color: rgb(7, 44, 7);
 
 }
-
+.row{
+   padding: 30px !important; 
+}
 .col-sm-4 {
     display: flex;
     flex-direction: column;
@@ -20,8 +22,7 @@ img {
     border-radius: 15px;
     border: 1px solid white !important;
     background-image: linear-gradient(90deg, rgb(231, 197, 133), rgb(46, 34, 21));
-    color: white;
-    padding: 10px;
+    color: white; 
 }
 
 h5 {
